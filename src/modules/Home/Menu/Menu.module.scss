@@ -1,0 +1,12 @@
+$menu-width: 400px;
+$font-family: 'Montserrat';
+$tooltip-max-width: 500px;
+
+.menu {
+    width: $menu-width;
+    font-family: $font-family;
+
+    .text {
+        font-family: $font-family;
+    }
+}

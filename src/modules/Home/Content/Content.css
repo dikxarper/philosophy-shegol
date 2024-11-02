@@ -1,0 +1,21 @@
+.content {
+    flex: 1;
+    overflow-y: auto;
+    height: 80vh;
+    margin-top: 12px;
+    padding: 16px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+.content .ant-typography {
+    font-family: inherit;
+}
+
+.content_inner {
+    width: 595px;
+    margin: 0 auto;
+    border-bottom: none;
+    border-top: none;
+}

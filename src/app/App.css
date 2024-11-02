@@ -1,6 +1,23 @@
+/* Montserrat from Google Fonts [https://fonts.google.com] */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Ant Design Customization */
+.ant-layout {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ant-tooltip {
+    max-width: none;
+}
+
 :root {
     --main-blue: #041225;
     --icon-blue: #0E2B52;
+}
+
+body {
+    margin: 0;
 }
 
 .container {

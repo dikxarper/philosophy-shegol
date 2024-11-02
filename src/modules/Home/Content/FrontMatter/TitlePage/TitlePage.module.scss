@@ -1,0 +1,35 @@
+$education-title-mb: 4rem;
+$education-title-text-tt: uppercase;
+
+$authors-text-tt: uppercase;
+$authors-mb: 2rem;
+
+$title-mb: 1rem;
+
+$text-size: 21px;
+$text-weight: 700;
+$text-color: #4c94d8;
+
+.main {
+    text-align: center;
+    .education_title {
+        margin-bottom: $education-title-mb;
+        .text {
+            text-transform: $education-title-text-tt;
+        }
+    }
+    .authors {
+        margin-bottom: $authors-mb;
+        .text {
+            text-transform: $authors-text-tt;
+        }
+    }
+    .title {
+        margin-bottom: $title-mb;
+    }
+    .text {
+        font-size: $text-size;
+        font-weight: $text-weight;
+        color: $text-color;
+    }
+}
