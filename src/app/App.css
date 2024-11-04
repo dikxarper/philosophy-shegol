@@ -16,6 +16,10 @@
     --icon-blue: #0E2B52;
 }
 
+html {
+    font-size: 14px;
+}
+
 body {
     margin: 0;
 }

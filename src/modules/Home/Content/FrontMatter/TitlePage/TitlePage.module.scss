@@ -1,35 +1,18 @@
-$education-title-mb: 4rem;
-$education-title-text-tt: uppercase;
+@use '@/shared/utils/variables.scss' as *;
 
-$authors-text-tt: uppercase;
-$authors-mb: 2rem;
-
-$title-mb: 1rem;
-
-$text-size: 21px;
-$text-weight: 700;
-$text-color: #4c94d8;
+$image-width: 550px;
+$text-size: convert-points-to-pixels($title-text-size-points);
 
 .main {
     text-align: center;
-    .education_title {
-        margin-bottom: $education-title-mb;
-        .text {
-            text-transform: $education-title-text-tt;
-        }
+    font-size: $text-size;
+    font-weight: bold;
+    color: $title-text-color;
+    
+    .education_title, .authors {
+        text-transform: uppercase;
     }
-    .authors {
-        margin-bottom: $authors-mb;
-        .text {
-            text-transform: $authors-text-tt;
-        }
-    }
-    .title {
-        margin-bottom: $title-mb;
-    }
-    .text {
-        font-size: $text-size;
-        font-weight: $text-weight;
-        color: $text-color;
+    .title_image {
+        width: $image-width;
     }
 }

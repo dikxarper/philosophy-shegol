@@ -1,12 +1,12 @@
 .content {
     flex: 1;
     overflow-y: auto;
-    height: 80vh;
-    margin-top: 12px;
-    padding: 16px;
+    height: 88.5vh;
+    padding: 0 16px;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 19px;
+    font-size: 18.67px;
+    background-color: #FFFDDA;
 }
 
 .content .ant-typography {
@@ -14,8 +14,13 @@
 }
 
 .content_inner {
-    width: 595px;
+    width: 220mm;
     margin: 0 auto;
-    border-bottom: none;
+    padding: 0 2.5cm;
+    border: 1px solid #C7C7C7;
     border-top: none;
+    border-bottom: none;
+
+    text-align: justify;
+    background-color: #fff;
 }

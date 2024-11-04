@@ -1,5 +1,4 @@
 import React from 'react';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { MenuProps, Tooltip, Typography } from 'antd';
 import { Menu as AntdMenu } from 'antd';
 import styles from './Menu.module.scss';
@@ -9,7 +8,6 @@ type MenuItem = Required<MenuProps>['items'][number];
 const items: MenuItem[] = [
     {
         key: '1',
-        icon: <MailOutlined />,
         label: 
             <Tooltip
                 title="Unit 1. Week 1. Reading chapters “Introduction” and “Robbie”"
@@ -28,7 +26,6 @@ const items: MenuItem[] = [
     },
     {
         key: '2',
-        icon: <AppstoreOutlined />,
         label: 'Navigation Two',
         children: [
             { key: '21', label: 'Option 1' },
@@ -55,7 +52,6 @@ const items: MenuItem[] = [
     },
     {
         key: '3',
-        icon: <SettingOutlined />,
         label: 'Navigation Three',
         children: [
             { key: '31', label: 'Option 1' },

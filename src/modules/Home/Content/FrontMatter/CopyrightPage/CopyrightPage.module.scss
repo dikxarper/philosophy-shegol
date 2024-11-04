@@ -1,0 +1,27 @@
+@use '@/shared/utils/variables.scss' as *;
+
+$text-indent: 0.5in;
+$image-width: 150px;
+
+.main {
+    .udc_bbc {
+        font-weight: bold;
+    }
+    .reviewers {
+        text-indent: $text-indent;
+
+        .reviewers_title {
+            text-transform: uppercase;
+        }
+    }
+    .title, .preface, .approval {
+        text-indent: $text-indent;
+    }
+    .isbn {
+        width: $image-width;
+    }
+}
+
+.text_right {
+    text-align: right;
+}
