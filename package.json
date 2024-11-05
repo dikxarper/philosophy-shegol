@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Fraugrammers.github.io/e-book-academy",
   "name": "react-ts-ant-vite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
