@@ -1,10 +1,6 @@
 @use "sass:math";
 
-$points-to-pixels-ratio: math.div(13, 10);
-$default-text-size-points: 14;
-$title-text-size-points: 16;
+$default-text-size-points: 14pt;
+$title-text-size-points: 16pt;
 $title-text-color: #4c94d8;
-
-@function convert-points-to-pixels($points) {
-    @return math.round($points * $points-to-pixels-ratio) * 1px;
-}
+$text-indent: 0.5in;

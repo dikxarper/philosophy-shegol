@@ -1,0 +1,31 @@
+@use "sass:math";
+@use '@/shared/utils/variables.scss' as *;
+
+$margin: $default-text-size-points;
+
+.check_list {
+    > li {
+        margin-bottom: $margin;
+        > ol {
+            margin-top: $margin;
+            > li {
+                margin: math.div($margin, 3);
+            }
+        }
+    }
+}
+
+.lesson_list {
+    > li {
+        margin-bottom: $margin;
+        li {
+            margin: math.div($margin, 2);
+        }
+    }
+}
+
+.materials {
+    > li {
+        margin: math.div($margin, 3);
+    }
+}

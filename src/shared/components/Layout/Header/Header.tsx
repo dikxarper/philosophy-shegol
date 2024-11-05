@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     return (
         <header className='header'>
             <div className='header_inner'>
-                <div>The manual</div>
+                <div>Professional English Course: Enhancing Reading competencies</div>
                 <div>
                     <Button type="text" style={{color: 'white'}}>About</Button>
                 </div>

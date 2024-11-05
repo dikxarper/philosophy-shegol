@@ -1,8 +1,8 @@
-import TitlePage from './FrontMatter/TitlePage/TitlePage';
-import CopyrigthPage from './FrontMatter/CopyrightPage/CopyrightPage';
+import TitlePage from './FrontMatter/TitlePage';
+import CopyrigthPage from './FrontMatter/CopyrightPage';
 import PartialSpacing from '@/shared/components/Content/PartialSpacing';
+import Body from './Body/Body';
 import './Content.css';
-import Introduction from './FrontMatter/Introduction/Introduction';
 
 const Content: React.FC = () => {
     return (
@@ -10,10 +10,14 @@ const Content: React.FC = () => {
             <div className='content_inner'>
                 <PartialSpacing />
                 <TitlePage />
-                <PartialSpacing count={2} />
+                <PartialSpacing />
+                <hr />
+                <PartialSpacing />
                 <CopyrigthPage />
-                <PartialSpacing count={2} />
-                <Introduction />
+                <PartialSpacing />
+                <hr />
+                <PartialSpacing />
+                <Body />
             </div>
         </div>
     );
