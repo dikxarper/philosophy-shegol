@@ -2,7 +2,6 @@ import React from 'react';
 import { MenuProps, Tooltip, Typography } from 'antd';
 import { Menu as AntdMenu } from 'antd';
 import styles from './Menu.module.scss';
-import { Link } from 'react-router-dom';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
