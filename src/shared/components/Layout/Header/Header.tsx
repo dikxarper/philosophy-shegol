@@ -1,15 +1,14 @@
 import React from 'react';
-import './Header.css';
-import { Button } from 'antd';
+import { Link } from 'react-router-dom';
+
+import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
     return (
-        <header className='header'>
-            <div className='header_inner'>
-                <div>Professional English Course: Enhancing Reading competencies</div>
-                <div>
-                    <Button type="text" style={{color: 'white'}}>About</Button>
-                </div>
+        <header className={styles.header}>
+            <div className={styles.header_inner}>
+                <Link className={styles.header_link} to={'/'}>Professional English Course: Enhancing Reading competencies</Link>
+                <Link className={styles.header_link} to={'/about'}>About</Link>
             </div>
         </header>
     );

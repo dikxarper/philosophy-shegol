@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { MenuProps } from 'antd';
 import { Menu as AntdMenu } from 'antd';
 import styles from './Menu.module.scss';
@@ -172,12 +172,8 @@ const Menu: React.FC = () => {
         const contentHeightForElse = 7.5;
         const openKeysLength = openKeys.length;
 
-        // console.log('Previous open keys length:', prevOpenKeysLength);
-        // console.log('Current open keys length:', openKeysLength);
-
         if (openKeysLength === 4) {
             if (prevOpenKeysLength > openKeysLength) {
-                console.log('yes');
                 dispatch(reduceContentHeight(contentHeightForFive));
             }
         } else if (openKeysLength >= 5) {
@@ -188,8 +184,6 @@ const Menu: React.FC = () => {
                     dispatch(reduceContentHeight(contentHeightForElse));
                 }
             } else {
-                console.log('Previous open keys length:', prevOpenKeysLength);
-                console.log('Current open keys length:', openKeysLength);
                 if (openKeysLength > prevOpenKeysLength) {
                     dispatch(addContentHeight(contentHeightForElse));
                 } else {
@@ -200,7 +194,6 @@ const Menu: React.FC = () => {
 
         setPrevOpenKeysLength(openKeysLength);
     }
-
 
     return (
         <AntdMenu

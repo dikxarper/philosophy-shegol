@@ -1,0 +1,33 @@
+$container-mw: 1200px;
+$manual-lh: 1.5;
+$author-img-container-w: 200px;
+$author-img-container-h: 260px;
+
+.container {
+    width: 100%;
+    max-width: $container-mw;
+    margin: 0 auto;
+
+    .manual_content {
+        p {
+            line-height: $manual-lh;
+        }
+    }
+
+    .authors_body {
+        display: flex;
+        gap: 100px;
+        .author_element {
+            text-align: center;
+            .author_img_container {
+                width: $author-img-container-w;
+                height: $author-img-container-h;
+                .author_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

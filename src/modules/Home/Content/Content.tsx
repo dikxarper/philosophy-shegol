@@ -9,7 +9,6 @@ import styles from './Content.module.scss';
 
 const Content: React.FC = () => {
     const contentHeight = useSelector((state: RootState) => state.menuSlice.contentHeight)
-    console.log(contentHeight);
     
     return (
         <div className={styles.content} style={{height: `${contentHeight}vh`}}> 

@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 
 import Home from '../modules/Home/Home';
 import Header from '../shared/components/Layout/Header/Header';
+import About from '@/modules/About/About';
 import './App.css';
 
 const { Content } = Layout;
@@ -25,6 +26,7 @@ const App: React.FC = () => {
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path="/" element={<Home />} />
+                    <Route path='/about' element={<About />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Route>
             </Routes>

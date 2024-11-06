@@ -1,7 +1,5 @@
 @use "sass:math";
-@use '@/shared/utils/variables.scss' as *;
-
-$margin: $default-text-size-points;
+$margin: 14pt;
 
 .check_list {
     > li {

@@ -1,0 +1,23 @@
+$header-bg: #163269;
+$header-p: 16px 32px;
+$header-color: #fff;
+$header-link-color-hover: #c0c0c0;
+
+.header {
+    background-color: $header-bg;
+    padding: $header-p;
+    color: $header-color;
+
+    .header_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header_link {
+            color: inherit;
+        }
+        .header_link:hover {
+            color: $header-link-color-hover;
+        }
+    }
+}
