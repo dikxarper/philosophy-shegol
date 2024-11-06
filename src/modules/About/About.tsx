@@ -33,6 +33,7 @@ const About: React.FC = () => {
                             <Image
                                 className={styles.author_img}
                                 src={author_1}
+                                preview={false}
                             />
                         </div>
                         <Title 
@@ -47,6 +48,7 @@ const About: React.FC = () => {
                             <Image
                                 className={styles.author_img}
                                 src={author_2}
+                                preview={false}
                             />
                         </div>
                         <Title 
@@ -62,6 +64,7 @@ const About: React.FC = () => {
                                 className={styles.author_img}
                                 src='https://placehold.co/200x260'
                                 style={{border: '1px solid', borderColor: '#333'}}
+                                preview={false}
                             />
                         </div>
                         <Title 
