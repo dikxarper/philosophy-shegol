@@ -1,4 +1,5 @@
 import { Image } from 'antd';
+import isbn_image from '/img/isbn.png'
 import Spacing from '@/shared/components/Content/Spacing';
 import Text from '@/shared/components/Content/Text';
 
@@ -43,7 +44,7 @@ const CopyrigthPage: React.FC = () => {
             <Spacing size={14} count={2} />
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                 <Image
-                    src='/img/isbn.png'
+                    src={isbn_image}
                     width={150}
                 />
                 <div>

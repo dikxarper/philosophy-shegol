@@ -1,3 +1,16 @@
 .wrapper {
     display: flex;
 }
+
+/* Ant design custom */
+.ant-anchor {
+    padding-inline-start: 0px !important;
+}
+
+.ant-anchor-ink{
+    display: none !important;
+}
+
+.ant-anchor-link {
+    padding-inline-start: 0px !important;
+}

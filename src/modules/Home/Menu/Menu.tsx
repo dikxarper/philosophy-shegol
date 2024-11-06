@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuProps, Tooltip, Typography } from 'antd';
+import { MenuProps, Typography } from 'antd';
 import { Menu as AntdMenu } from 'antd';
 import styles from './Menu.module.scss';
 
@@ -8,212 +8,181 @@ type MenuItem = Required<MenuProps>['items'][number];
 const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+};
 
 const items: MenuItem[] = [
     {
         key: '1',
         label:
-        <a onClick={() => handleScroll("unit1")}>
-            <Tooltip
-                placement='right'
-            >
-                
+            <a className={styles.anchor} onClick={() => handleScroll("unit-1")}>
                 <Typography.Text className={styles.text} ellipsis>
-                    <b>Unit 1.</b> Reading chapters “Introduction” and “Robbie”
+                    <b>Unit 1.</b> Chapters: "Introduction" and "Robbie"
                 </Typography.Text>
-                
-            </Tooltip>
-            </a>
-            ,
+            </a>,
         children: [
             {
-                key: '11', label: <Tooltip
-                    title="Check your vocabulary and grammar: I, Robot by Isaac Asimov. Chapters: “Introduction” and  “Robbie”."
-                    placement='right'
-                >
-                    <Typography.Text className={styles.text} ellipsis>
-                        Check your vocabulary and grammar: I, Robot by Isaac Asimov. Chapters: “Introduction” and  “Robbie”.
-                    </Typography.Text>
-                </Tooltip>
+                key: '11',
+                label:
+                    <a className={styles.anchor} onClick={() => handleScroll("unit-11")}>
+                        <Typography.Text className={styles.text} ellipsis>
+                            Check your vocabulary and grammar
+                        </Typography.Text>
+                    </a>
             },
         ],
     },
     {
         key: '2',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-                <b>Unit2.</b> Chapter: Runaround
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-2")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 2.</b> Chapter: "Runaround"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '21', label: <Tooltip
-                    title='Check your grammar and vocabulary: I, Robot by I.Asimov. Chapter "Runaround"'
-                    placement='right'
-                >
-                    <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I, Robot by I.Asimov. Chapter "Runaround"
-                    </Typography.Text>
-                </Tooltip>,
+                key: '21',
+                label:
+                    <a className={styles.anchor} onClick={() => handleScroll("unit-21")}>
+                        <Typography.Text className={styles.text} ellipsis>
+                            Check your vocabulary and grammar
+                        </Typography.Text>
+                    </a>
             },
         ],
     },
     {
         key: '3',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-               <b>Unit 3.</b>  Chapter "Reason" from "I, Robot" by Isaak Asimov
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-3")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 3.</b>  Chapter: "Reason"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '31', label: <Tooltip
-                    title='Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter "Reason"'
-                    placement='right'
-                >
+                key: '31',
+                label: <a className={styles.anchor} onClick={() => handleScroll("unit-31")}>
                     <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter "Reason"
+                        Check your vocabulary and grammar
                     </Typography.Text>
-                </Tooltip>
+                </a>
             },
         ],
     },
     {
         key: '4',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-                <b>Unit 4.</b> Chapter “Catch That Rabbit” from "I, Robot" by Isaak Asimov
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-4")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 4.</b> Chapter: "Catch That Rabbit"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '41', label: <Tooltip
-                    title='Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Catch That Rabbit'
-                    placement='right'
-                >
+                key: '41',
+                label: <a className={styles.anchor} onClick={() => handleScroll("unit-41")}>
                     <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Catch That Rabbit
+                        Check your vocabulary and grammar
                     </Typography.Text>
-                </Tooltip>
+                </a>
             },
         ],
     },
     {
         key: '5',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-                <b>Unit 5.</b> Chapter “Liar!” from "I, Robot" by Isaak Asimov
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-5")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 5.</b> Chapter: "Liar!"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '51', label: <Tooltip
-                    title='Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Liar!'
-                    placement='right'
-                >
+                key: '51',
+                label: <a className={styles.anchor} onClick={() => handleScroll("unit-51")}>
                     <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Liar!
+                        Check your vocabulary and grammar
                     </Typography.Text>
-                </Tooltip>
+                </a>
             },
         ],
     },
     {
         key: '6',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-                <b>Unit 6.</b> Chapter "Little Lost Robot!" from "I, Robot" by Isaak Asimov
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-6")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 6.</b> Chapter: "Little Lost Robot!"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '61', label: <Tooltip
-                    title='Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Little Lost Robot'
-                    placement='right'
-                >
+                key: '61',
+                label: <a className={styles.anchor} onClick={() => handleScroll("unit-61")}>
                     <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Little Lost Robot
+                        Check your vocabulary and grammar
                     </Typography.Text>
-                </Tooltip>
+                </a>
             },
         ],
     },
     {
         key: '7',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-                <b>Unit 7.</b> Chapter "Escape!" from "I, Robot" by Isaak Asimov
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-7")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 7.</b> Chapter: "Escape!"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '71', label: <Tooltip
-                    title='Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Escape'
-                    placement='right'
-                >
+                key: '71',
+                label: <a className={styles.anchor} onClick={() => handleScroll("unit-71")}>
                     <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Escape
+                        Check your vocabulary and grammar
                     </Typography.Text>
-                </Tooltip>
+                </a>
             },
         ],
     },
     {
         key: '8',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-                <b>Unit 8.</b> Chapter “Evidence” from "I, Robot" by Isaak Asimov
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-8")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 8.</b> Chapter: "Evidence"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '81', label: <Tooltip
-                    title='Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Evidence'
-                    placement='right'
-                >
+                key: '81',
+                label: <a className={styles.anchor} onClick={() => handleScroll("unit-81")}>
                     <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Evidence
+                        Check your vocabulary and grammar
                     </Typography.Text>
-                </Tooltip>
+                </a>
             },
         ],
     },
     {
         key: '9',
-        label: <Tooltip
-            placement='right'
-        >
-            <Typography.Text className={styles.text} ellipsis>
-                <b>Unit 9.</b> Chapter “The Evitable Conflict” from “I, Robot” by Isaak Asimov
-            </Typography.Text>
-        </Tooltip>,
+        label:
+            <a className={styles.anchor} onClick={() => handleScroll("unit-9")}>
+                <Typography.Text className={styles.text} ellipsis>
+                    <b>Unit 9.</b> Chapter: "The Evitable Conflict"
+                </Typography.Text>
+            </a>,
         children: [
             {
-                key: '91', label: <Tooltip
-                    title='Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: The Evitable Conflict'
-                    placement='right'
-                >
+                key: '81',
+                label: <a className={styles.anchor} onClick={() => handleScroll("unit-91")}>
                     <Typography.Text className={styles.text} ellipsis>
-                        Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: The Evitable Conflict
+                        Check your vocabulary and grammar
                     </Typography.Text>
-                </Tooltip>
+                </a>
             },
         ],
     },

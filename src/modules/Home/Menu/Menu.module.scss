@@ -1,4 +1,4 @@
-$menu-width: 560px;
+$menu-width: 400px;
 $font-family: 'Montserrat';
 $tooltip-max-width: 500px;
 
@@ -8,5 +8,11 @@ $tooltip-max-width: 500px;
 
     .text {
         font-family: $font-family;
+    }
+
+    .anchor {
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 }

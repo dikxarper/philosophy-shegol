@@ -20,13 +20,13 @@ const Body: React.FC = () => {
                 </p>
             </Text>
             <Spacing size={7} />
-            <Title id='unit1' color='blue' weight='bold' margin={true}>Unit 1. Week 1. Reading chapters “Introduction” and “Robbie”</Title>
+            <Title id='unit-1' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 1. Chapters: "Introduction" and "Robbie"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Learning Objective:</Span> to enhance comprehension and critical thinking through discussion, role-play, and analysis of the themes related to robots and technology presented in the “Introduction” and the chapter on “Robbie”.
             </Text>
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue'>Pre-Activity Setup (10 minutes):</Title>
+                    <Title color='blue' weight='bold'>Pre-Activity Setup (10 minutes):</Title>
                     <ul>
                         <li>
                             Provide a brief overview of the chapter's key themes, particularly focusing on the human-robot relationship, societal implications of robotics, and the character of Susan Calvin.
@@ -37,7 +37,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue'>Group Discussion (20 minutes):</Title>
+                    <Title color='blue' weight='bold'>Group Discussion (20 minutes):</Title>
                     <ul>
                         <li>
                             Each group discusses the following questions:
@@ -59,7 +59,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue'>Role-Play Activity (30 minutes):</Title>
+                    <Title color='blue' weight='bold'>Role-Play Activity (30 minutes):</Title>
                     <ul>
                         <li>
                             Each group will take on different roles from the chapter:
@@ -87,7 +87,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue'>Class Discussion (15 minutes):</Title>
+                    <Title color='blue' weight='bold'>Class Discussion (15 minutes):</Title>
                     <ul>
                         <li>
                             After the performances, hold a class discussion to reflect on:
@@ -103,7 +103,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue'>Reflection Writing (15 minutes):</Title>
+                    <Title color='blue' weight='bold'>Reflection Writing (15 minutes):</Title>
                     <ul>
                         <li>
                             Students write a short reflection (150-200 words) addressing:
@@ -125,8 +125,8 @@ const Body: React.FC = () => {
                 <li>Copies of "I, Robot" (Introduction and Robbie)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7}/>
-            <Title color='blue' weight='bold'>Check your vocabulary and grammar: I, Robot by Isaac Asimov. Chapters: “Introduction” and  “Robbie”.</Title>
+            <Spacing size={7} />
+            <Title id='unit-11' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     What is the opinion of Susan about robots? (1 Point)
@@ -291,7 +291,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Unit2. Chapter: Runaround</Title>
+            <Title id='unit-2' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 2. Chapter: "Runaround"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Objective:</Span> To engage students in critical thinking and collaborative discussion while exploring the themes and implications of Chapter "Runaround" in "I, Robot."
             </Text>
@@ -337,16 +337,16 @@ const Body: React.FC = () => {
             </i>
             <Spacing />
             <Text>
-                <Span color='blue'>Creative Writing:</Span> Imagine you are one of the robots in the chapter. Write a diary entry from your perspective, detailing your experiences and feelings about the events that transpired. Length: 1-2 paragraphs.
+                <Span color='blue' weight='bold'>Creative Writing:</Span> Imagine you are one of the robots in the chapter. Write a diary entry from your perspective, detailing your experiences and feelings about the events that transpired. Length: 1-2 paragraphs.
             </Text>
             <Spacing />
-            <Title color='blue'>Materials Needed:</Title>
+            <Title color='blue' weight='bold'>Materials Needed:</Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Introduction and Robbie)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Check your grammar and vocabulary: I, Robot by I.Asimov. Chapter "Runaround"</Title>
+            <Title id='unit-21' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     Which variant is correct? (1 Point)
@@ -487,7 +487,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Unit 3. Chapter "Reason" from "I, Robot" by Isaak Asimov</Title>
+            <Title id='unit-3' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 3. Chapter "Reason"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Objective:</Span> To engage students in critical thinking about artificial intelligence and its implications through discussion and collaborative analysis of Chapter "Reason" from "I, Robot."
             </Text>
@@ -547,7 +547,7 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter "Reason".</Title>
+            <Title id='unit-31' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     Who is/are the Prophet/s of robots? (1 Point)
@@ -671,7 +671,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Unit 4. Chapter “Catch That Rabbit” from "I, Robot" by Isaak Asimov</Title>
+            <Title id='unit-4' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 4. Chapter: "Catch That Rabbit"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Learning Objective:</Span> to engage students in critical thinking and discussion around the themes of workplace policies, robot development, and social implications, fostering skills in analysis and collaboration.
             </Text>
@@ -744,7 +744,7 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Catch That Rabbit</Title>
+            <Title id='unit-41' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     Smooth and perfect as the luminiferous ether. What does ‘the luminiferous ether’ mean? (1 Point)
@@ -869,7 +869,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Unit 5. Chapter “Liar!” from "I, Robot" by Isaak Asimov</Title>
+            <Title id='unit-5' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 5. Chapter: "Liar!"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Learning objectives:</Span> to engage students in critical thinking about artificial intelligence, ethics, and workplace relationships through discussion and collaborative analysis of Chapter "Liar!" from "I, Robot."
             </Text>
@@ -961,7 +961,7 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Liar!</Title>
+            <Title id='unit-51' color='blue' className={styles.anchor} weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     What did the U.S. Robots create? (1 Point)
@@ -1093,7 +1093,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Unit 6. Chapter "Little Lost Robot!" from "I, Robot" by Isaak Asimov</Title>
+            <Title id='unit-6' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 6. Chapter: "Little Lost Robot!"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Learning objectives:</Span> To engage students in critical thinking about ethical implications of robotics and collaborative discussion and analytical skills through real-world applications.
             </Text>
@@ -1158,7 +1158,7 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Little Lost Robot.</Title>
+            <Title id='unit-61' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     How has Nestor 10 hidden itself? (1 Point)
@@ -1283,7 +1283,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Unit 7. Chapter "Escape!" from "I, Robot" by Isaak Asimov</Title>
+            <Title id='unit-7' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 7. Chapter: "Escape!"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Learning objectives:</Span> to engage students in discussions about corporate competition, collaboration, and ethical considerations in the tech industry and develop critical thinking and communication skills through collaborative activities.
             </Text>
@@ -1366,7 +1366,7 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Escape</Title>
+            <Title id='unit-71' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     What appeal does Consolidated Robots have for US Robots? (1 Point)
@@ -1442,7 +1442,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Unit 8. Chapter “Evidence” from "I, Robot" by Isaak Asimov</Title>
+            <Title id='unit-8' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 8. Chapter: "Evidence"v</Title>
             <Text>
                 <Span color='blue' weight='bold'>Learning objectives:</Span> to critically analyze the implications of artificial intelligence through discussion and creative writing and to enhance students' skills in argumentation and scenario development.
             </Text>
@@ -1527,7 +1527,7 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: Evidence</Title>
+            <Title id="unit-81" className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     What political developments does Calvin discuss? (1 Point)
@@ -1587,7 +1587,7 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold' margin={true}>Unit 9. Chapter “The Evitable Conflict” from “I, Robot” by Isaak Asimov</Title>
+            <Title id='unit-9' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 9. Chapter: "The Evitable Conflict"</Title>
             <Text>
                 <Span color='blue' weight='bold'>Learning objectives:</Span>to analyze the implications of intelligent machines in society and to engage in critical discussion and reflection on technology's role in governance and ethical considerations.
             </Text>
@@ -1679,7 +1679,7 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Check your grammar and vocabulary: I,Robot by I.Asimov. Chapter: The Evitable Conflict</Title>
+            <Title id="unit-91" className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
             <ol className={styles.check_list}>
                 <li>
                     What are the Machines’ calculating circuits designed for? (1 Point)

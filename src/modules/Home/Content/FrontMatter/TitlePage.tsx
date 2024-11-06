@@ -24,6 +24,7 @@ const TitlePage: React.FC = () => {
             <Title size={16} color='blue' weight='bold'>
                 (Teaching textbook on home reading)
             </Title>
+            <Spacing size={7} />
             <Image
                 src={title_image}
                 width={550}
