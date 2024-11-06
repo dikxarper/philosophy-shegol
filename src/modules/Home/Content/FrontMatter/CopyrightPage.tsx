@@ -46,6 +46,7 @@ const CopyrigthPage: React.FC = () => {
                 <Image
                     src={isbn_image}
                     width={150}
+                    preview={false}
                 />
                 <div>
                     © Tleshova Zh.K., 2022<br />
