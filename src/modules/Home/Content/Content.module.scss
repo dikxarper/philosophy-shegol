@@ -1,0 +1,24 @@
+.content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 16px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    background-color: #FFFDDA;
+
+    .ant-typography {
+        font-family: inherit;
+    }
+    .content_inner {
+        width: 220mm;
+        margin: 0 auto;
+        padding: 0 2.5cm;
+        border: 1px solid #C7C7C7;
+        border-top: none;
+        border-bottom: none;
+    
+        text-align: justify;
+        background-color: #fff;
+    } 
+}

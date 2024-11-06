@@ -1,13 +1,19 @@
+import { useSelector } from 'react-redux';
+import { RootState } from '@/app/store/store';
+
 import TitlePage from './FrontMatter/TitlePage';
 import CopyrigthPage from './FrontMatter/CopyrightPage';
 import PartialSpacing from '@/shared/components/Content/PartialSpacing';
 import Body from './Body/Body';
-import './Content.css';
+import styles from './Content.module.scss';
 
 const Content: React.FC = () => {
+    const contentHeight = useSelector((state: RootState) => state.menuSlice.contentHeight)
+    console.log(contentHeight);
+    
     return (
-        <div className='content'>
-            <div className='content_inner'>
+        <div className={styles.content} style={{height: `${contentHeight}vh`}}> 
+            <div className={styles.content_inner}>
                 <PartialSpacing />
                 <TitlePage />
                 <PartialSpacing />
