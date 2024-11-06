@@ -24,10 +24,11 @@ const App: React.FC = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route element={<MainLayout />}>
-                    <Route path="/" element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path="*" element={<Navigate to="/" />} />
+            <Route element={<MainLayout />}>
+                    <Route path="/e-book-academy" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/" element={<Navigate to="/e-book-academy" />} />
+                    <Route path="*" element={<Navigate to="/e-book-academy" />} />
                 </Route>
             </Routes>
         </BrowserRouter>
