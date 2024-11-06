@@ -26,7 +26,7 @@ const App: React.FC = () => {
             <Routes>
             <Route element={<MainLayout />}>
                     <Route path="/e-book-academy" element={<Home />} />
-                    <Route path="/e-book-academy/about" element={<About />} />
+                    <Route path="/about" element={<About />} />
                     <Route path="/" element={<Navigate to="/e-book-academy" />} />
                     <Route path="*" element={<Navigate to="/e-book-academy" />} />
                 </Route>

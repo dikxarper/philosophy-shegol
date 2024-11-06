@@ -28,6 +28,7 @@ const TitlePage: React.FC = () => {
             <Image
                 src={title_image}
                 width={550}
+                preview={false}
             /> 
             <Spacing size={16} count={14} />
             <Title size={16} color='blue' weight='bold'>
