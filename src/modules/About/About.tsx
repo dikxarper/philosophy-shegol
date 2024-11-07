@@ -1,11 +1,13 @@
 import React from 'react';
-import { Image, Typography } from 'antd';
+import { Button, Image, Typography } from 'antd';
 
+import Spacing from '@/shared/components/Content/Spacing';
 import author_1 from '/img/authors/zhibek_tleshova.jpg';
 import author_2 from '/img/authors/khanat_kassenov.jpg';
-// import author_3 from '/img/authors/aigerim_urazbekova.jpg';
+import author_3 from '/img/authors/aigerim_urazbekova.jpg';
+import research_gate_icon from '/img/icons/research_gate.png'
 import styles from './About.module.scss';
-import Spacing from '@/shared/components/Content/Spacing';
+import { LinkOutlined } from '@ant-design/icons';
 
 const { Title } = Typography
 
@@ -42,6 +44,14 @@ const About: React.FC = () => {
                         >
                             Zhibek Tleshova
                         </Title>
+                        <Button 
+                            href='https://www.researchgate.net/profile/Zhibek-Tleshova' 
+                            type='link'
+                            target='_blank'
+                            icon={<LinkOutlined />}
+                        >
+                            ResearchGate
+                        </Button>
                     </div>
                     <div className={styles.author_element}>
                         <div className={styles.author_img_container}>
@@ -57,13 +67,20 @@ const About: React.FC = () => {
                         >
                             Khanat Kassenov
                         </Title>
+                        <Button 
+                            href='https://www.researchgate.net/profile/Khanat-Kassenov' 
+                            type='link'
+                            target='_blank'
+                            icon={<LinkOutlined />}
+                        >
+                            ResearchGate
+                        </Button>
                     </div>
                     <div className={styles.author_element}>
                         <div className={styles.author_img_container}>
                             <Image
                                 className={styles.author_img}
-                                src='https://placehold.co/200x260'
-                                style={{border: '1px solid', borderColor: '#333'}}
+                                src={author_3}
                                 preview={false}
                             />
                         </div>
@@ -73,6 +90,14 @@ const About: React.FC = () => {
                         >
                             Aigerim Urazbekova
                         </Title>
+                        <Button 
+                            href='https://www.researchgate.net/profile/Aigerim-Urazbekova' 
+                            type='link'
+                            target='_blank'
+                            icon={<LinkOutlined />}
+                        >
+                            ResearchGate
+                        </Button>
                     </div>
                 </div>
             </div>
