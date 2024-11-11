@@ -3,7 +3,6 @@ import { Button, Image, Typography } from 'antd';
 
 import Spacing from '@/shared/components/Content/Spacing';
 import author_1 from '/img/authors/zhibek_tleshova.jpg';
-import author_2 from '/img/authors/khanat_kassenov.jpg';
 import author_3 from '/img/authors/aigerim_urazbekova.jpg';
 import styles from './About.module.scss';
 import { LinkOutlined } from '@ant-design/icons';
@@ -45,29 +44,6 @@ const About: React.FC = () => {
                         </Title>
                         <Button 
                             href='https://www.researchgate.net/profile/Zhibek-Tleshova' 
-                            type='link'
-                            target='_blank'
-                            icon={<LinkOutlined />}
-                        >
-                            ResearchGate
-                        </Button>
-                    </div>
-                    <div className={styles.author_element}>
-                        <div className={styles.author_img_container}>
-                            <Image
-                                className={styles.author_img}
-                                src={author_2}
-                                preview={false}
-                            />
-                        </div>
-                        <Title 
-                            className={styles.author_fullname}
-                            level={4}
-                        >
-                            Khanat Kassenov
-                        </Title>
-                        <Button 
-                            href='https://www.researchgate.net/profile/Khanat-Kassenov' 
                             type='link'
                             target='_blank'
                             icon={<LinkOutlined />}
