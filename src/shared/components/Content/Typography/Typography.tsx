@@ -1,46 +1,50 @@
 import styles from './Typography.module.scss';
 import React from 'react';
 
-interface TypographyProps {
-    style?: React.CSSProperties;
-    children: React.ReactNode;
-}
-
-interface TextProps {
-    indent: boolean;
-    style?: React.CSSProperties;
-    children: React.ReactNode;
-}
-
 interface StyledProps {
     style?: React.CSSProperties;
     children: React.ReactNode;
+    className?: string;
+    id?: string;
 }
 
 interface TitleProps extends StyledProps {
     size?: number;
     color?: string;
+    margin?: boolean;
 }
 
-const Typography: React.FC<TypographyProps> & {
-    Title: React.FC<TitleProps>
-    Text: React.FC<TextProps>
-    Span: React.FC<StyledProps>
-} = ({ style, children }) => (
-    <div className={styles['custom-typography']} style={style}>
+interface TextProps extends StyledProps {
+    indent?: boolean;
+}
+
+interface SpanProps extends StyledProps {
+    color?: string;
+}
+
+const Typography: React.FC<StyledProps> & {
+    Title: React.FC<TitleProps>;
+    Text: React.FC<TextProps>;
+    Span: React.FC<SpanProps>;
+} = ({ style, children, className, id }) => (
+    <div className={`${styles['custom-typography']} ${className || ''}`} style={style} id={id}>
         {children}
     </div>
 );
 
 const Title: React.FC<TitleProps> = ({ 
     size = 14,
-    color = 'blue', 
+    color = 'blue',
+    margin = false,
     style,
-    children 
+    children,
+    className,
+    id 
 }) => (
     <div
-        className={`${styles['custom-typography-title']} ${styles[`color-${color}`]} ${styles[`size-${size}`]}`}
+        className={`${styles['custom-typography-title']} ${styles[`color-${color}`]} ${styles[`size-${size}`]} ${margin ? styles['margined'] : ''} ${className || ''}`}
         style={style}
+        id={id}
     >
         {children}
     </div>
@@ -49,21 +53,27 @@ const Title: React.FC<TitleProps> = ({
 const Text: React.FC<TextProps> = ({ 
     indent = false, 
     children, 
-    style 
-}) => {
+    style,
+    className,
+    id 
+}) => (
+    <div 
+        className={`${styles['custom-typography-text']} ${indent ? styles['indented'] : ''} ${className || ''}`} 
+        style={style}
+        id={id}
+    >
+        {children}
+    </div>
+);
 
-    return (
-        <div 
-            className={`${styles['custom-typography-text']} ${indent ? styles['indented'] : ''}`} 
-            style={style}
-        >
-            {children}
-        </div>
-    )
-};
-
-const Span: React.FC<StyledProps> = ({ children, style }) => (
-    <span className={styles['custom-typography-span']} style={style}>
+const Span: React.FC<SpanProps> = ({ 
+    color = 'blue',
+    children, 
+    style,
+    className,
+    id 
+}) => (
+    <span className={`${styles['custom-typography-span']} ${styles[`color-${color}`]} ${className || ''}`} style={style} id={id}>
         {children}
     </span>
 );

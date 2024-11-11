@@ -1,14 +1,13 @@
-import Title from '@/shared/components/Content/Title';
 import Spacing from '@/shared/components/Content/Spacing';
-import Text from '@/shared/components/Content/Text';
-import Span from '@/shared/components/Content/Span';
+import Typography from '@/shared/components/Content/Typography/Typography';
 import styles from './Body.module.scss';
 
 const Body: React.FC = () => {
     return (
         <>
-            <Text weight='bold'>Dear students,</Text>
-            <Text indent={true}>
+            <b>Dear students,</b>
+            <Typography.Text indent={true}>
+                
                 <p>
                     In taking the course of “Professional English” for IT students, you are going to be assigned Isaac Asimov’s science fiction novel, “I, Robot” as one of our principal reading texts.  The novel was published in 1950 and is based on stories that Asimov had published in science fiction magazines between 1940 and 1950. These stories offer many speculative ideas on the future of robots in human society, including the “Three Laws of Robotics,” a concept that future science fiction writing, and criticism would frequently revisit.
                 </p>
@@ -18,15 +17,15 @@ const Body: React.FC = () => {
                 <p>
                     It is hoped that you will find the novel and the associated assignments to be an entertaining and informative gateway for improving English reading comprehension and speaking.
                 </p>
-            </Text>
+            </Typography.Text>
             <Spacing size={7} />
-            <Title id='unit-1' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 1. Chapters: "Introduction" and "Robbie"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Learning Objective:</Span> to enhance comprehension and critical thinking through discussion, role-play, and analysis of the themes related to robots and technology presented in the “Introduction” and the chapter on “Robbie”.
-            </Text>
+            <Typography.Title id='unit-1' className={styles.anchor} margin={true}>Unit 1. Chapters: "Introduction" and "Robbie"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Learning Objective:</Typography.Span> to enhance comprehension and critical thinking through discussion, role-play, and analysis of the themes related to robots and technology presented in the “Introduction” and the chapter on “Robbie”.
+            </Typography.Text>
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Pre-Activity Setup (10 minutes):</Title>
+                    <Typography.Title>Pre-Activity Setup (10 minutes):</Typography.Title>
                     <ul>
                         <li>
                             Provide a brief overview of the chapter's key themes, particularly focusing on the human-robot relationship, societal implications of robotics, and the character of Susan Calvin.
@@ -37,7 +36,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Group Discussion (20 minutes):</Title>
+                    <Typography.Title>Group Discussion (20 minutes):</Typography.Title>
                     <ul>
                         <li>
                             Each group discusses the following questions:
@@ -59,7 +58,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Role-Play Activity (30 minutes):</Title>
+                    <Typography.Title>Role-Play Activity (30 minutes):</Typography.Title>
                     <ul>
                         <li>
                             Each group will take on different roles from the chapter:
@@ -87,7 +86,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Class Discussion (15 minutes):</Title>
+                    <Typography.Title>Class Discussion (15 minutes):</Typography.Title>
                     <ul>
                         <li>
                             After the performances, hold a class discussion to reflect on:
@@ -103,7 +102,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Reflection Writing (15 minutes):</Title>
+                    <Typography.Title>Reflection Writing (15 minutes):</Typography.Title>
                     <ul>
                         <li>
                             Students write a short reflection (150-200 words) addressing:
@@ -120,13 +119,13 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Introduction and Robbie)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id='unit-11' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id='unit-11' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     What is the opinion of Susan about robots? (1 Point)
@@ -291,11 +290,11 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-2' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 2. Chapter: "Runaround"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Objective:</Span> To engage students in critical thinking and collaborative discussion while exploring the themes and implications of Chapter "Runaround" in "I, Robot."
-            </Text>
-            <Title color='blue' weight='bold' margin={true}>Pre-Reading Activities</Title>
+            <Typography.Title id='unit-2' className={styles.anchor} margin={true}>Unit 2. Chapter: "Runaround"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Objective:</Typography.Span> To engage students in critical thinking and collaborative discussion while exploring the themes and implications of Chapter "Runaround" in "I, Robot."
+            </Typography.Text>
+            <Typography.Title margin={true}>Pre-Reading Activities</Typography.Title>
             <ul>
                 <li>
                     What does the title "Runaround" suggest to you? Consider the words "run" and "around" in your response. Write a brief paragraph (4-5 sentences) about your interpretation.
@@ -308,7 +307,7 @@ const Body: React.FC = () => {
                 </li>
             </ul>
             <i>Share your predictions with the class, and create a class chart of possible themes.</i>
-            <Title color='blue' weight='bold' margin={true}>While Reading Activities</Title>
+            <Typography.Title margin={true}>While Reading Activities</Typography.Title>
             <ul>
                 <li>
                     As you read, take notes on the main characters introduced in this chapter. Focus on their motivations, actions, and interactions with each other. Use a character map to organize your thoughts.
@@ -317,8 +316,8 @@ const Body: React.FC = () => {
                     Identify five new or challenging words from the chapter. Write down their definitions and use each word in a sentence that relates to the chapter's context.
                 </li>
             </ul>
-            <Title color='blue' weight='bold' margin={true}>Post-Reading Activities</Title>
-            <Text>Discussion Question:</Text>
+            <Typography.Title margin={true}>Post-Reading Activities</Typography.Title>
+            <Typography.Text>Discussion Question:</Typography.Text>
             <ul>
                 <li>
                     What does the situation described in Chapter "Runaround" demonstrate about the advantages and limitations of implementing new technology for real-world use?
@@ -328,25 +327,25 @@ const Body: React.FC = () => {
                 Write a detailed response (6-8 sentences) considering both the positive and negative aspects presented in the chapter. After writing, discuss your response in small groups.
             </i>
             <Spacing />
-            <Text>
-                <Span color='blue' weight='bold'>Debate Activity:</Span> "The benefits of advanced technology outweigh the risks."
-            </Text>
+            <Typography.Text>
+                <Typography.Span>Debate Activity:</Typography.Span> "The benefits of advanced technology outweigh the risks."
+            </Typography.Text>
             <Spacing />
             <i>
                 Divide the class into two groups: one supporting the statement and the other opposing it. Prepare arguments based on the chapter and related real-world examples. After the debate, reflect on how the chapter’s events relate to your position.
             </i>
             <Spacing />
-            <Text>
-                <Span color='blue' weight='bold'>Creative Writing:</Span> Imagine you are one of the robots in the chapter. Write a diary entry from your perspective, detailing your experiences and feelings about the events that transpired. Length: 1-2 paragraphs.
-            </Text>
+            <Typography.Text>
+                <Typography.Span>Creative Writing:</Typography.Span> Imagine you are one of the robots in the chapter. Write a diary entry from your perspective, detailing your experiences and feelings about the events that transpired. Length: 1-2 paragraphs.
+            </Typography.Text>
             <Spacing />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Introduction and Robbie)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id='unit-21' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id='unit-21' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     Which variant is correct? (1 Point)
@@ -487,23 +486,23 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-3' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 3. Chapter "Reason"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Objective:</Span> To engage students in critical thinking about artificial intelligence and its implications through discussion and collaborative analysis of Chapter "Reason" from "I, Robot."
-            </Text>
+            <Typography.Title id='unit-3' className={styles.anchor} margin={true}>Unit 3. Chapter "Reason"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Objective:</Typography.Span> To engage students in critical thinking about artificial intelligence and its implications through discussion and collaborative analysis of Chapter "Reason" from "I, Robot."
+            </Typography.Text>
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Pre-Reading Activity (20 minutes): Dilemma Discussion.</Title>
+                    <Typography.Title>Pre-Reading Activity (20 minutes): Dilemma Discussion.</Typography.Title>
                     <ul>
                         <li>"How would you solve the dilemma Cutie had?"</li>
                         <li>Encourage them to think about the nature of intelligence, authority, and the definition of reality as presented in the chapter.</li>
-                        <Text>Have students form small groups of 3-4 and share their solutions to the dilemma. Each group should discuss:</Text>
+                        <Typography.Text>Have students form small groups of 3-4 and share their solutions to the dilemma. Each group should discuss:</Typography.Text>
                         <li>The different perspectives on how to resolve Cutie’s conflict.</li>
                         <li>The implications of their proposed solutions on human-robot interactions.</li>
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Post-Reading Discussion (30 minutes): Historical Quote Analysis:</Title>
+                    <Typography.Title>Post-Reading Discussion (30 minutes): Historical Quote Analysis:</Typography.Title>
                     <ul>
                         <li>Write René Descartes' famous quote, "I think, therefore I am," and Cutie’s adaptation, "I, myself, exist, because I think," on the board.</li>
                         <li>In their groups, have students discuss:
@@ -515,7 +514,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Pros and Cons of Robot Thinking (20 minutes):</Title>
+                    <Typography.Title>Pros and Cons of Robot Thinking (20 minutes):</Typography.Title>
                     <ul>
                         <li>As a class, create a two-column chart on the board for positive and *</li>
                         <li>Encourage students to consider:
@@ -528,7 +527,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Reflection and Conclusion (10 minutes):</Title>
+                    <Typography.Title>Reflection and Conclusion (10 minutes):</Typography.Title>
                     <ul>
                         <li>Have students write a brief reflection (150-200 words) on:
                             <ul>
@@ -540,14 +539,14 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Reason)</li>
                 <li>Whiteboard or digital platform for chart creation</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id='unit-31' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id='unit-31' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     Who is/are the Prophet/s of robots? (1 Point)
@@ -671,21 +670,21 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-4' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 4. Chapter: "Catch That Rabbit"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Learning Objective:</Span> to engage students in critical thinking and discussion around the themes of workplace policies, robot development, and social implications, fostering skills in analysis and collaboration.
-            </Text>
+            <Typography.Title id='unit-4' className={styles.anchor} margin={true}>Unit 4. Chapter: "Catch That Rabbit"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Learning Objective:</Typography.Span> to engage students in critical thinking and discussion around the themes of workplace policies, robot development, and social implications, fostering skills in analysis and collaboration.
+            </Typography.Text>
             <Spacing />
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Pre-Activity Setup (10 minutes):</Title>
+                    <Typography.Title>Pre-Activity Setup (10 minutes):</Typography.Title>
                     <ul>
                         <li>Briefly summarize Chapter 3, focusing on the key themes such as robot behavior, workplace dynamics, and human-robot relationships.</li>
                         <li>Split students into small groups of 4-5.</li>
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Group Discussion (20 minutes):</Title>
+                    <Typography.Title>Group Discussion (20 minutes):</Typography.Title>
                     <ul>
                         <li>Each group discusses the following questions:
                             <ol>
@@ -699,7 +698,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Role-Play Activity (30 minutes):</Title>
+                    <Typography.Title>Role-Play Activity (30 minutes):</Typography.Title>
                     <ul>
                         <li>Each group will take on different roles related to the scenario from the chapter:
                             <ul>
@@ -714,7 +713,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Class Discussion (15 minutes):</Title>
+                    <Typography.Title>Class Discussion (15 minutes):</Typography.Title>
                     <ul>
                         <li>After the performances, hold a class discussion to reflect on:
                             <ul>
@@ -726,7 +725,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Reflection Writing (15 minutes):</Title>
+                    <Typography.Title>Reflection Writing (15 minutes):</Typography.Title>
                     <ul>
                         <li>Students write a short reflection (150-200 words) addressing:
                             <ul>
@@ -738,13 +737,13 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter 3: Catch That Rabbit)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id='unit-41' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id='unit-41' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     Smooth and perfect as the luminiferous ether. What does ‘the luminiferous ether’ mean? (1 Point)
@@ -869,14 +868,14 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-5' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 5. Chapter: "Liar!"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Learning objectives:</Span> to engage students in critical thinking about artificial intelligence, ethics, and workplace relationships through discussion and collaborative analysis of Chapter "Liar!" from "I, Robot."
-            </Text>
+            <Typography.Title id='unit-5' className={styles.anchor} margin={true}>Unit 5. Chapter: "Liar!"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Learning objectives:</Typography.Span> to engage students in critical thinking about artificial intelligence, ethics, and workplace relationships through discussion and collaborative analysis of Chapter "Liar!" from "I, Robot."
+            </Typography.Text>
             <Spacing />
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Pre-Reading Activity (30 minutes). A. Group Brainstorming:</Title>
+                    <Typography.Title>Pre-Reading Activity (30 minutes). A. Group Brainstorming:</Typography.Title>
                     <ul>
                         <li>
                             "What contemporary system or process most resembles the creation of positronic brains?"
@@ -888,13 +887,13 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Ethical and Economic Issues Discussion (15 minutes):</Title>
+                    <Typography.Title>Ethical and Economic Issues Discussion (15 minutes):</Typography.Title>
                     <ul>
                         <li>
                             "What are the ethical and economic issues surrounding a machine that could read people's minds? Would it sell? Should it sell?"
                             <ul>
                                 <li>
-                                    <Span color='blue' weight='bold'>Whole Class Discussion:</Span> Facilitate a guided discussion with the following prompts:
+                                    <Typography.Span>Whole Class Discussion:</Typography.Span> Facilitate a guided discussion with the following prompts:
                                     <ul>
                                         <li>What potential benefits could arise from such technology?</li>
                                         <li>What ethical dilemmas does it present? (e.g., privacy concerns, consent)</li>
@@ -907,44 +906,44 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Post-Reading Discussion (30 minutes)</Title>
+                    <Typography.Title>Post-Reading Discussion (30 minutes)</Typography.Title>
                     <ol type='A'>
                         <li>
-                            <Title color='blue' weight='bold'>Pros and Cons of Workplace Relationships:</Title>
+                            <Typography.Title>Pros and Cons of Workplace Relationships:</Typography.Title>
                             <ul>
                                 <li>
-                                    <Span color='blue' weight='bold'>Group Analysis:</Span> After reading the chapter, ask students to reflect on the romantic relationships depicted in the story. In their small groups, have them discuss:
+                                    <Typography.Span>Group Analysis:</Typography.Span> After reading the chapter, ask students to reflect on the romantic relationships depicted in the story. In their small groups, have them discuss:
                                     <ul>
                                         <li>What are the pros and cons of romantic relationships at work?</li>
                                         <li>What specific problems or risks can arise, referencing the characters in the chapter?</li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <Span color='blue' weight='bold'>Class Chart:</Span> Create a pros and cons chart on the board with input from each group.
+                                    <Typography.Span>Class Chart:</Typography.Span> Create a pros and cons chart on the board with input from each group.
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <Title color='blue' weight='bold'>Position Defense (15 minutes):</Title>
+                            <Typography.Title>Position Defense (15 minutes):</Typography.Title>
                             <ul>
                                 <li>
-                                    <Span color='blue' weight='bold'>Position Statement:</Span> Ask students to take a position on the issue:
+                                    <Typography.Span>Position Statement:</Typography.Span> Ask students to take a position on the issue:
                                     <ul>
                                         <li>Good, bad, or "it depends" regarding workplace relationships.</li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <Span color='blue' weight='bold'>Personal Experiences:</Span> Encourage students to share personal experiences or hypothetical situations that support their stance. Relate these to the novel's characters and plot as appropriate.
+                                    <Typography.Span>Personal Experiences:</Typography.Span> Encourage students to share personal experiences or hypothetical situations that support their stance. Relate these to the novel's characters and plot as appropriate.
                                 </li>
                             </ul>
                         </li>
                     </ol>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Reflection and Conclusion (10 minutes):</Title>
+                    <Typography.Title>Reflection and Conclusion (10 minutes):</Typography.Title>
                     <ul>
                         <li>
-                            <Span color='blue' weight='bold'>Individual Writing:</Span> Have students write a brief reflection (150-200 words) on:
+                            <Typography.Span>Individual Writing:</Typography.Span> Have students write a brief reflection (150-200 words) on:
                             <ul>
                                 <li>Their thoughts about workplace relationships based on the discussions and the characters in "Liar!"</li>
                                 <li>How the ethical implications of technology in the chapter parallel real-life situations.</li>
@@ -954,14 +953,14 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Liar!)</li>
                 <li>Whiteboard or digital platform for chart creation</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id='unit-51' color='blue' className={styles.anchor} weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id='unit-51' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     What did the U.S. Robots create? (1 Point)
@@ -1093,12 +1092,12 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-6' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 6. Chapter: "Little Lost Robot!"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Learning objectives:</Span> To engage students in critical thinking about ethical implications of robotics and collaborative discussion and analytical skills through real-world applications.
-            </Text>
+            <Typography.Title id='unit-6' className={styles.anchor} margin={true}>Unit 6. Chapter: "Little Lost Robot!"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Learning objectives:</Typography.Span> To engage students in critical thinking about ethical implications of robotics and collaborative discussion and analytical skills through real-world applications.
+            </Typography.Text>
             <Spacing />
-            <Title color='blue' weight='bold'>Pre-Reading Activities. Group Discussion: The First Law of Robotics</Title>
+            <Typography.Title>Pre-Reading Activities. Group Discussion: The First Law of Robotics</Typography.Title>
             <ul className={styles.lesson_list}>
                 <li>"A robot may not injure a human being, or, through inaction, allow a human being to come to harm."</li>
                 <li>In small groups, discuss whether you think this law is a good idea. Consider the following:
@@ -1110,19 +1109,19 @@ const Body: React.FC = () => {
                 </li>
                 <li>Each group will present a summary of their discussion points.</li>
             </ul>
-            <Title color='blue' weight='bold'>Post-Reading Activities</Title>
+            <Typography.Title>Post-Reading Activities</Typography.Title>
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Cost-Benefit Analysis</Title>
+                    <Typography.Title>Cost-Benefit Analysis</Typography.Title>
                     <ul>
                         <li>
                             Estimate the cost (in 2021 dollars) of the 63 robots discussed in the chapter and evaluate the pros and cons of destroying them versus keeping them.
                             <ul>
                                 <li>
-                                    <Span weight='bold'>Step 1:</Span> Research and estimate the cost of a similar robot in today’s market. Discuss as a class the factors that might influence this cost.
+                                    <Typography.Span color='black'>Step 1:</Typography.Span> Research and estimate the cost of a similar robot in today’s market. Discuss as a class the factors that might influence this cost.
                                 </li>
                                 <li>
-                                    <Span weight='bold'>Step 2:</Span> In pairs, create a simple cost-benefit analysis chart with at least three pros and three cons for both options (destroying vs. keeping the robots).
+                                    <Typography.Span color='black'>Step 2:</Typography.Span> In pairs, create a simple cost-benefit analysis chart with at least three pros and three cons for both options (destroying vs. keeping the robots).
                                 </li>
                             </ul>
                         </li>
@@ -1130,7 +1129,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Government-Industry Relations Debate</Title>
+                    <Typography.Title>Government-Industry Relations Debate</Typography.Title>
                     <ul>
                         <li>
                             Discuss the ethical implications of government influence in technology creation, especially regarding the development of robots without the First Law.
@@ -1148,17 +1147,17 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Span color='blue' weight='bold'>Reflection:</Span> Ask students to write a brief reflection on what they learned about the ethical implications of robotics, government influence, and the balance between innovation and safety. This can be done as a homework assignment or a quick in-class writing exercise.
+                    <Typography.Span>Reflection:</Typography.Span> Ask students to write a brief reflection on what they learned about the ethical implications of robotics, government influence, and the balance between innovation and safety. This can be done as a homework assignment or a quick in-class writing exercise.
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Little Lost Robot)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id='unit-61' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id='unit-61' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     How has Nestor 10 hidden itself? (1 Point)
@@ -1283,15 +1282,15 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-7' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 7. Chapter: "Escape!"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Learning objectives:</Span> to engage students in discussions about corporate competition, collaboration, and ethical considerations in the tech industry and develop critical thinking and communication skills through collaborative activities.
-            </Text>
+            <Typography.Title id='unit-7' className={styles.anchor} margin={true}>Unit 7. Chapter: "Escape!"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Learning objectives:</Typography.Span> to engage students in discussions about corporate competition, collaboration, and ethical considerations in the tech industry and develop critical thinking and communication skills through collaborative activities.
+            </Typography.Text>
             <Spacing />
-            <Title color='blue' weight='bold'>Pre-Reading Activities</Title>
+            <Typography.Title>Pre-Reading Activities</Typography.Title>
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Group Discussion: Industry Competition</Title>
+                    <Typography.Title>Group Discussion: Industry Competition</Typography.Title>
                     <ul>
                         <li>"What do you think about the competition between industrial automation software companies such as ABB, Emerson Process Management, Rockwell Automation, Schneider Electric, and Mitsubishi Electric?"</li>
                         <li>
@@ -1306,7 +1305,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Debate: Collaboration vs. Competition</Title>
+                    <Typography.Title>Debate: Collaboration vs. Competition</Typography.Title>
                     <ul>
                         <li>"Would working together and sharing be better?"</li>
                         <li>
@@ -1320,7 +1319,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Personal Reflection: Corporate Ethics</Title>
+                    <Typography.Title>Personal Reflection: Corporate Ethics</Typography.Title>
                     <ul>
                         <li>"Would you want to work for a place involved in corporate sabotage? If you were personally involved in corporate malfeasance, what would you be worried about?"</li>
                         <li>
@@ -1333,11 +1332,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <div style={{ marginLeft: -40 }}>
-                    <Title color='blue' weight='bold'>Post-Reading Activities</Title>
+                    <Typography.Title>Post-Reading Activities</Typography.Title>
                 </div>
                 <Spacing size={7} />
                 <li>
-                    <Title color='blue' weight='bold'>Moral Considerations in Science and Technology</Title>
+                    <Typography.Title>Moral Considerations in Science and Technology</Typography.Title>
                     <ul>
                         <li>"The desire for new scientific outcomes often conflicts with moral considerations. How might these factors come into conflict, and can such conflicts always be resolved?"</li>
                         <li>
@@ -1352,7 +1351,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Class Reflection and Summary</Title>
+                    <Typography.Title>Class Reflection and Summary</Typography.Title>
                     <ul>
                         <li>As a final reflection, have students write a brief essay summarizing their thoughts on the balance between scientific advancement and moral responsibility in the tech industry.</li>
                         <li>Collect essays for assessment and provide feedback on their understanding of the themes discussed.</li>
@@ -1360,13 +1359,13 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Escape)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id='unit-71' className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id='unit-71' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     What appeal does Consolidated Robots have for US Robots? (1 Point)
@@ -1442,15 +1441,15 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-8' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 8. Chapter: "Evidence"v</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Learning objectives:</Span> to critically analyze the implications of artificial intelligence through discussion and creative writing and to enhance students' skills in argumentation and scenario development.
-            </Text>
+            <Typography.Title id='unit-8' className={styles.anchor} margin={true}>Unit 8. Chapter: "Evidence"v</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Learning objectives:</Typography.Span> to critically analyze the implications of artificial intelligence through discussion and creative writing and to enhance students' skills in argumentation and scenario development.
+            </Typography.Text>
             <Spacing />
-            <Title color='blue' weight='bold'>Pre-Reading Activities</Title>
+            <Typography.Title>Pre-Reading Activities</Typography.Title>
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Group Discussion: The Dual Nature of AI</Title>
+                    <Typography.Title>Group Discussion: The Dual Nature of AI</Typography.Title>
                     <ul>
                         <li>"Is it good or bad to have artificial intelligence technology?"</li>
                         <li>
@@ -1464,7 +1463,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Think-Pair-Share: Real-World Applications</Title>
+                    <Typography.Title>Think-Pair-Share: Real-World Applications</Typography.Title>
                     <ul>
                         <li>
                             After the group discussion, have students individually think about one specific application of AI they are familiar with.
@@ -1477,11 +1476,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <div style={{ marginLeft: -40 }}>
-                    <Title color='blue' weight='bold'>Post-Reading Activities</Title>
+                    <Typography.Title>Post-Reading Activities</Typography.Title>
                 </div>
                 <Spacing />
                 <li>
-                    <Title color='blue' weight='bold'>Creative Writing: Byerly’s Campaign for Mayor</Title>
+                    <Typography.Title>Creative Writing: Byerly’s Campaign for Mayor</Typography.Title>
                     <ul>
                         <li>"Develop a scenario about Byerly’s campaign for mayor. Does he succeed or not? Why, or why not?"</li>
                         <li>
@@ -1496,7 +1495,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Class Presentation: Campaign Scenarios</Title>
+                    <Typography.Title>Class Presentation: Campaign Scenarios</Typography.Title>
                     <ul>
                         <li>
                             Each group presents their creative scenario to the class.
@@ -1508,7 +1507,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Reflection: The Role of AI in Society</Title>
+                    <Typography.Title>Reflection: The Role of AI in Society</Typography.Title>
                     <ul>
                         <li>
                             As a concluding task, ask students to write a brief reflection (250-300 words) on how the discussions and creative writing activity have influenced their views on AI.
@@ -1521,13 +1520,13 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Evidence)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id="unit-81" className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id="unit-81" className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     What political developments does Calvin discuss? (1 Point)
@@ -1587,34 +1586,34 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title id='unit-9' className={styles.anchor} color='blue' weight='bold' margin={true}>Unit 9. Chapter: "The Evitable Conflict"</Title>
-            <Text>
-                <Span color='blue' weight='bold'>Learning objectives:</Span>to analyze the implications of intelligent machines in society and to engage in critical discussion and reflection on technology's role in governance and ethical considerations.
-            </Text>
+            <Typography.Title id='unit-9' className={styles.anchor} margin={true}>Unit 9. Chapter: "The Evitable Conflict"</Typography.Title>
+            <Typography.Text>
+                <Typography.Span>Learning objectives:</Typography.Span>to analyze the implications of intelligent machines in society and to engage in critical discussion and reflection on technology's role in governance and ethical considerations.
+            </Typography.Text>
             <Spacing />
-            <Title color='blue' weight='bold'>Pre-Reading Activities</Title>
+            <Typography.Title>Pre-Reading Activities</Typography.Title>
             <ol className={styles.lesson_list}>
                 <li>
-                    <Title color='blue' weight='bold'>Think-Pair-Share: Governing with Machines</Title>
+                    <Typography.Title>Think-Pair-Share: Governing with Machines</Typography.Title>
                     <ul>
                         <li>
                             "Do you think there will come a time when human society is governed by intelligent machines? Do you see any advantages in this possibility?"
                             <ul>
                                 <li>
-                                    <Span weight='bold'>Think:</Span> Individually write down your thoughts on the prompt for 3-5 minutes.
+                                    <Typography.Span color='black'>Think:</Typography.Span> Individually write down your thoughts on the prompt for 3-5 minutes.
                                 </li>
                                 <li>
-                                    <Span weight='bold'>Pair:</Span> Share your ideas with a partner, discussing potential advantages and disadvantages of machine governance.
+                                    <Typography.Span color='black'>Pair:</Typography.Span> Share your ideas with a partner, discussing potential advantages and disadvantages of machine governance.
                                 </li>
                                 <li>
-                                    <Span weight='bold'>Share:</Span> Each pair shares a summary of their discussion with the class.
+                                    <Typography.Span color='black'>Share:</Typography.Span> Each pair shares a summary of their discussion with the class.
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Group Brainstorm: Scenarios of Intelligent Machines</Title>
+                    <Typography.Title>Group Brainstorm: Scenarios of Intelligent Machines</Typography.Title>
                     <ul>
                         <li>
                             In small groups, brainstorm potential scenarios where intelligent machines could govern or assist in governance. Consider:
@@ -1627,11 +1626,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <div style={{ marginLeft: -40 }}>
-                    <Title color='blue' weight='bold'>Post-Reading Activities</Title>
+                    <Typography.Title>Post-Reading Activities</Typography.Title>
                 </div>
                 <Spacing />
                 <li>
-                    <Title color='blue' weight='bold'>Group Discussion: Future Implications of Intelligent Machines</Title>
+                    <Typography.Title>Group Discussion: Future Implications of Intelligent Machines</Typography.Title>
                     <ul>
                         <li>"What does this chapter, and the book as a whole, suggest about the future of intelligent machines for human society?"</li>
                         <li>
@@ -1646,7 +1645,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Quotation Analysis: Textual Support</Title>
+                    <Typography.Title>Quotation Analysis: Textual Support</Typography.Title>
                     <ul>
                         <li>
                             Assign each group a passage from the chapter. Each group should:
@@ -1659,7 +1658,7 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
                 <li>
-                    <Title color='blue' weight='bold'>Reflection: Messages for the 21st Century</Title>
+                    <Typography.Title>Reflection: Messages for the 21st Century</Typography.Title>
                     <ul>
                         <li>
                             Ask students to write a reflective piece (300-400 words) on:
@@ -1673,13 +1672,13 @@ const Body: React.FC = () => {
                 </li>
             </ol>
             <Spacing size={7} />
-            <Title color='blue' weight='bold'>Materials Needed:</Title>
+            <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: The Evitable Conflict)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Spacing size={7} />
-            <Title id="unit-91" className={styles.anchor} color='blue' weight='bold' margin={true}>Check your grammar and vocabulary:</Title>
+            <Typography.Title id="unit-91" className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
                     What are the Machines’ calculating circuits designed for? (1 Point)

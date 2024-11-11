@@ -2,12 +2,10 @@
 
 .custom-typography-title {
     font-weight: bold;
-
-    &.color-dark { color: $default-black-color }
-    &.color-blue { color: $default-blue-color }
-
-    &.size-14 { font-size: $default-font-size }
-    &.size-16 { font-size: $default-titlePage-font-size }
+    &.margined {
+        margin-top: $default-title-vertical-margin;
+        margin-bottom: $default-title-vertical-margin;
+    }
 }
 
 .custom-typography-text {
@@ -17,6 +15,11 @@
 }
 
 .custom-typography-span {
-    color: $default-blue-color;
     font-weight: bold;
 }
+
+.color-dark { color: $default-black-color }
+.color-blue { color: $default-blue-color }
+
+.size-14 { font-size: $default-font-size }
+.size-16 { font-size: $default-titlePage-font-size }
