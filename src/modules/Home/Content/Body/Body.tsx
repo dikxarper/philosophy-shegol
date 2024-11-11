@@ -18,7 +18,6 @@ const Body: React.FC = () => {
                     It is hoped that you will find the novel and the associated assignments to be an entertaining and informative gateway for improving English reading comprehension and speaking.
                 </p>
             </Typography.Text>
-            <Spacing size={7} />
             <Typography.Title id='unit-1' className={styles.anchor} margin={true}>Unit 1. Chapters: "Introduction" and "Robbie"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Learning Objective:</Typography.Span> to enhance comprehension and critical thinking through discussion, role-play, and analysis of the themes related to robots and technology presented in the “Introduction” and the chapter on “Robbie”.
@@ -118,13 +117,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Introduction and Robbie)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id='unit-11' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -289,7 +286,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-2' className={styles.anchor} margin={true}>Unit 2. Chapter: "Runaround"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Objective:</Typography.Span> To engage students in critical thinking and collaborative discussion while exploring the themes and implications of Chapter "Runaround" in "I, Robot."
@@ -344,7 +340,6 @@ const Body: React.FC = () => {
                 <li>Copies of "I, Robot" (Introduction and Robbie)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id='unit-21' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -485,7 +480,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-3' className={styles.anchor} margin={true}>Unit 3. Chapter "Reason"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Objective:</Typography.Span> To engage students in critical thinking about artificial intelligence and its implications through discussion and collaborative analysis of Chapter "Reason" from "I, Robot."
@@ -538,14 +532,12 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Reason)</li>
                 <li>Whiteboard or digital platform for chart creation</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id='unit-31' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -669,7 +661,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-4' className={styles.anchor} margin={true}>Unit 4. Chapter: "Catch That Rabbit"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Learning Objective:</Typography.Span> to engage students in critical thinking and discussion around the themes of workplace policies, robot development, and social implications, fostering skills in analysis and collaboration.
@@ -736,13 +727,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter 3: Catch That Rabbit)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id='unit-41' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -867,7 +856,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-5' className={styles.anchor} margin={true}>Unit 5. Chapter: "Liar!"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Learning objectives:</Typography.Span> to engage students in critical thinking about artificial intelligence, ethics, and workplace relationships through discussion and collaborative analysis of Chapter "Liar!" from "I, Robot."
@@ -952,14 +940,12 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Liar!)</li>
                 <li>Whiteboard or digital platform for chart creation</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id='unit-51' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -1091,7 +1077,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-6' className={styles.anchor} margin={true}>Unit 6. Chapter: "Little Lost Robot!"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Learning objectives:</Typography.Span> To engage students in critical thinking about ethical implications of robotics and collaborative discussion and analytical skills through real-world applications.
@@ -1150,13 +1135,11 @@ const Body: React.FC = () => {
                     <Typography.Span>Reflection:</Typography.Span> Ask students to write a brief reflection on what they learned about the ethical implications of robotics, government influence, and the balance between innovation and safety. This can be done as a homework assignment or a quick in-class writing exercise.
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Little Lost Robot)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id='unit-61' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -1281,7 +1264,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-7' className={styles.anchor} margin={true}>Unit 7. Chapter: "Escape!"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Learning objectives:</Typography.Span> to engage students in discussions about corporate competition, collaboration, and ethical considerations in the tech industry and develop critical thinking and communication skills through collaborative activities.
@@ -1358,13 +1340,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Escape)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id='unit-71' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -1440,7 +1420,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-8' className={styles.anchor} margin={true}>Unit 8. Chapter: "Evidence"v</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Learning objectives:</Typography.Span> to critically analyze the implications of artificial intelligence through discussion and creative writing and to enhance students' skills in argumentation and scenario development.
@@ -1519,13 +1498,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: Evidence)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id="unit-81" className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>
@@ -1585,7 +1562,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title id='unit-9' className={styles.anchor} margin={true}>Unit 9. Chapter: "The Evitable Conflict"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Learning objectives:</Typography.Span>to analyze the implications of intelligent machines in society and to engage in critical discussion and reflection on technology's role in governance and ethical considerations.
@@ -1671,13 +1647,11 @@ const Body: React.FC = () => {
                     </ul>
                 </li>
             </ol>
-            <Spacing size={7} />
             <Typography.Title>Materials Needed:</Typography.Title>
             <ul className={styles.materials}>
                 <li>Copies of "I, Robot" (Chapter: The Evitable Conflict)</li>
                 <li>Paper and pens for reflection writing</li>
             </ul>
-            <Spacing size={7} />
             <Typography.Title id="unit-91" className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
             <ol className={styles.check_list}>
                 <li>

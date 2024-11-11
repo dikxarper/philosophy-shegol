@@ -1,14 +1,11 @@
 import React from 'react';
-import { 
-    DEFAULT_PARTIAL_HEIGHT 
-} from '@/shared/utils/constants';
 
 interface PartialSpacingProps {
     count?: number;
 }
 
 const PartialSpacing: React.FC<PartialSpacingProps> = () => {
-    const partialHeight = DEFAULT_PARTIAL_HEIGHT;
+    const partialHeight = 12.7;
 
     return (
         <>
