@@ -19,6 +19,7 @@ const Content: React.FC = () => {
                 <hr />
                 <PartialSpacing />
                 <Body />
+                <PartialSpacing />
             </div>
         </div>
     );

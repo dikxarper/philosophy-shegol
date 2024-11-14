@@ -1757,7 +1757,6 @@ const Body: React.FC = () => {
                     </ol>
                 </li>
             </ol>
-            <Spacing count={10} />
         </>
     );
 };

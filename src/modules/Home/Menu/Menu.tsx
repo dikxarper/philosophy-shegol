@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MenuProps, Menu as AntdMenu } from 'antd';
-import { useDispatch } from 'react-redux';
-import { addContentHeight, reduceContentHeight } from '@/app/store/menuSlice';
 
 import styles from './Menu.module.scss';
 
@@ -164,43 +162,11 @@ const items: MenuItem[] = [
 ];
 
 const Menu: React.FC = () => {
-    const dispatch = useDispatch();
-    const [prevOpenKeysLength, setPrevOpenKeysLength] = useState(0);
-
-    const handleOpen = (openKeys: any) => {
-        const contentHeightForFive = 1.5;
-        const contentHeightForElse = 7.5;
-        const openKeysLength = openKeys.length;
-
-        if (openKeysLength === 4) {
-            if (prevOpenKeysLength > openKeysLength) {
-                dispatch(reduceContentHeight(contentHeightForFive));
-            }
-        } else if (openKeysLength >= 5) {
-            if (openKeysLength === 5) {
-                if (openKeysLength > prevOpenKeysLength) {
-                    dispatch(addContentHeight(contentHeightForFive));
-                } else {
-                    dispatch(reduceContentHeight(contentHeightForElse));
-                }
-            } else {
-                if (openKeysLength > prevOpenKeysLength) {
-                    dispatch(addContentHeight(contentHeightForElse));
-                } else {
-                    dispatch(reduceContentHeight(contentHeightForElse));
-                }
-            }
-        }
-
-        setPrevOpenKeysLength(openKeysLength);
-    }
-
     return (
         <AntdMenu
             className={styles.menu}
             mode="inline"
             items={items}
-            onOpenChange={handleOpen}
         />
     );
 };
