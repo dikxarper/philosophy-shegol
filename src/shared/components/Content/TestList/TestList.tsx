@@ -1,5 +1,5 @@
 import { Button, ConfigProvider, Form, message, Radio, Space } from "antd";
-import { ExclamationCircleOutlined } from "@ant-design/icons";
+import { CloseCircleOutlined, ExclamationCircleOutlined } from "@ant-design/icons";
 
 import styles from './TestList.module.scss';
 
@@ -29,18 +29,19 @@ const TestList: React.FC<TestListProps> = ({ options }) => {
     }
 
     return (
-        <ConfigProvider
-            theme={{
-                token: {
-                }
-            }}
-        >
+        <ConfigProvider theme={{
+            token: {
+                fontFamily: 'Times New Roman',
+                fontSize: (13 / 10) * 14
+            }
+        }}>
             <Form
                 form={form}
                 layout="vertical"
                 requiredMark={false}
                 scrollToFirstError
                 onFinish={formOnFinish}
+                className={styles["custom-form"]}
             >
                 {options.map((option, optionIndex) => (
                     <Form.Item
@@ -48,21 +49,25 @@ const TestList: React.FC<TestListProps> = ({ options }) => {
                         name={`radio-group-${optionIndex}`}
                         label={option.question}
                         rules={[
-                            { required: true, message: <span><ExclamationCircleOutlined /> This is a required question</span> },
+                            {
+                                required: true,
+                                message: <span><ExclamationCircleOutlined /> This is a required question</span>,
+                                validateTrigger: ['onSubmit', 'onChange'],
+                            },
                             {
                                 validator(_, value) {
                                     if (value && value === option.correctAnswer) {
                                         return Promise.resolve();
+                                    } else {
+                                        return Promise.reject(<span><CloseCircleOutlined style={{ color: 'red' }} /> Incorrect answer</span>);
                                     }
-                                    return Promise.reject();
-                                }
+                                },
+                                validateTrigger: 'onSubmit'
                             }
                         ]}
-                        validateTrigger="onSubmit"
                         validateFirst
-                        style={{ marginBottom: 48 }}
                     >
-                        <Radio.Group style={{ scrollMarginTop: 24 }}>
+                        <Radio.Group>
                             <Space direction="vertical">
                                 {option.answers.map((answer, answerIndex) => (
                                     <Radio
