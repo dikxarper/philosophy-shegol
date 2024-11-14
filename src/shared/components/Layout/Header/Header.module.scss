@@ -7,6 +7,10 @@ $header-link-color-hover: #c0c0c0;
     background-color: $header-bg;
     padding: $header-p;
     color: $header-color;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 
     .header_inner {
         display: flex;

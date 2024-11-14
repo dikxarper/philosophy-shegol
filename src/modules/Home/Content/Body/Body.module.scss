@@ -1,5 +1,9 @@
 @use "sass:math";
-$margin: 14pt;
+@use '@/shared/utils/variables' as *;
+
+$margin: $default-font-size;
+$anchor-scroll-mt: 25px;
+$anchor-mt: 35px;
 
 .check_list {
     > li {
@@ -30,6 +34,6 @@ $margin: 14pt;
 }
 
 .anchor {
-    scroll-margin-top: 25px;
-    margin-top: 35pt !important;
+    scroll-margin-top: calc($anchor-scroll-mt + $header-h);
+    margin-top: $anchor-mt !important;
 }

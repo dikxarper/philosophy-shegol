@@ -1,10 +1,16 @@
+@use '@/shared/utils/variables' as *;
+
 $menu-width: 400px;
-$font-family: 'Montserrat';
+$menu-l: 0;
+
 $tooltip-max-width: 500px;
 
 .menu {
+    position: sticky;
+    top: $header-h;
+    left: 0;
+    height: calc(100vh - $header-h);
     width: $menu-width;
-    font-family: $font-family;
 
     .anchor {
         display: flex;
