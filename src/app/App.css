@@ -14,9 +14,3 @@ body {
     max-width: 1500px;
     margin: 0 auto;
 }
-
-
-/* Ant Design Customization */
-.ant-layout {
-    font-family: 'Montserrat', sans-serif;
-}

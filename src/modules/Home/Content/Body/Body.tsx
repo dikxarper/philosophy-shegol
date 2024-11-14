@@ -1,5 +1,6 @@
 import Spacing from '@/shared/components/Content/Spacing';
 import Typography from '@/shared/components/Content/Typography/Typography';
+import TestList from '@/shared/components/Content/TestList/TestList';
 import styles from './Body.module.scss';
 
 const Body: React.FC = () => {
@@ -7,7 +8,7 @@ const Body: React.FC = () => {
         <>
             <b>Dear students,</b>
             <Typography.Text indent={true}>
-                
+
                 <p>
                     In taking the course of “Professional English” for IT students, you are going to be assigned Isaac Asimov’s science fiction novel, “I, Robot” as one of our principal reading texts.  The novel was published in 1950 and is based on stories that Asimov had published in science fiction magazines between 1940 and 1950. These stories offer many speculative ideas on the future of robots in human society, including the “Three Laws of Robotics,” a concept that future science fiction writing, and criticism would frequently revisit.
                 </p>
@@ -123,169 +124,190 @@ const Body: React.FC = () => {
                 <li>Paper and pens for reflection writing</li>
             </ul>
             <Typography.Title id='unit-11' className={styles.anchor} margin={true}>Check your grammar and vocabulary:</Typography.Title>
-            <ol className={styles.check_list}>
-                <li>
-                    What is the opinion of Susan about robots? (1 Point)
-                    <ol type='A'>
-                        <li>Robots are creatures devoted to humanity.</li>
-                        <li>Robots are blasphemers.</li>
-                        <li>Robots are main competitors for human jobs.</li>
-                        <li>Robots must be created as non-vocal robots.</li>
-                    </ol>
-                </li>
-                <li>
-                    Why does George give in to idea to take away Robbie? (1 Point)
-                    <ol type='A'>
-                        <li>Grace badgers George to get rid of Robbie.</li>
-                        <li>Robbie has broken the First Law of Robotics.</li>
-                        <li>Robbie has hurt Gloria.</li>
-                    </ol>
-                </li>
-                <li>
-                    There was always the impulse to ____________ from her sight. (1 Point)
-                    <ol type='A'>
-                        <li>sneak away</li>
-                        <li>sneak on</li>
-                        <li>sneak up</li>
-                    </ol>
-                </li>
-                <li>
-                    It was the high-pitched sound of a woman who had the nervous tone of one ________anxiety was beginning to overcome impatience. (1 Point)
-                    <ol type='A'>
-                        <li>by whom</li>
-                        <li>with whom</li>
-                        <li>in whom</li>
-                    </ol>
-                </li>
-                <li>
-                    Who worked as a robopsychologist? (1 Point)
-                    <ol type='A'>
-                        <li>Susan</li>
-                        <li>Alfred Lanning</li>
-                        <li>Lawrence Robertson</li>
-                    </ol>
-                </li>
-                <li>
-                    If you…….. me the bare bones, Dr. Calvin, I can have Mr. Powell fill it in afterward. (1 Point)
-                    <ol type='A'>
-                        <li>would give</li>
-                        <li>give</li>
-                        <li>had given</li>
-                    </ol>
-                </li>
-                <li>
-                    Robbie always wins Gloria because Gloria is too little to overcome Robbie. (1 Point)
-                    <ol type='A'>
-                        <li>Robbie lets Gloria win.</li>
-                        <li>Robbie always wins Gloria because it has an installed program.</li>
-                        <li>Robbie and Gloria win each other in turn.</li>
-                    </ol>
-                </li>
-                <li>
-                    What calculation parameters did Susan learn? (1 Point)
-                    <ol type='A'>
-                        <li>For fixing the possible variables within the “positronic brain”</li>
-                        <li>For neurological systems</li>
-                        <li>For identifying a brain hypertrophy</li>
-                    </ol>
-                </li>
-                <li>
-                    When did Alfred Lanning become director of research? (1 Point)
-                    <ol type='A'>
-                        <li>Before Susan joined U.S. Robot and Mechanical Men, Inc.</li>
-                        <li>After Susan joined U.S. Robot and Mechanical Men, Inc.</li>
-                        <li>They joined U.S. Robot and Mechanical Men, Inc. on the same day.</li>
-                    </ol>
-                </li>
-                <li>
-                    What did the U.S. Robots do to ensure the company’s survival? (1 Point)
-                    <ol type='A'>
-                        <li>New robot models were created.</li>
-                        <li>Robbie was taken back to the family.</li>
-                        <li>Mike Donovan worked on experimental designs.</li>
-                    </ol>
-                </li>
-                <li>
-                    Some little jigger will come loose and the awful thing will __________. (1 Point)
-                    <ol type='A'>
-                        <li>go berserk</li>
-                        <li>berserk</li>
-                        <li>completely berserk</li>
-                    </ol>
-                </li>
-                <li>
-                    Susan observed… (1 Point)
-                    <ol type='A'>
-                        <li>direction of human progress change and leap ahead.</li>
-                        <li>calculation parameters.</li>
-                        <li>positronic brain development.</li>
-                    </ol>
-                </li>
-                <li>
-                    Calculating machines in the mid-twentieth century were upset by… (1 Point)
-                    <ol type='A'>
-                        <li>Robertson and his positronic brain-paths</li>
-                        <li>Robertson and his photocells</li>
-                        <li>Robertson and his ideas on a size of human brain</li>
-                    </ol>
-                </li>
-                <li>
-                    They said we do not show respect for God or religion. (1 Point)
-                    <ol type='A'>
-                        <li>faithful</li>
-                        <li>pious</li>
-                        <li>blasphemers</li>
-                    </ol>
-                </li>
-                <li>
-                    “You _________ me back to the house, Robbie.” (1 Point)
-                    <ol type='A'>
-                        <li>could have better carry</li>
-                        <li>would better carry</li>
-                        <li>had better carry</li>
-                    </ol>
-                </li>
-                <li>
-                    Gloria’s attitude to Robbie is… (1 Point)
-                    <ol type='A'>
-                        <li>demanding but she loves Robbie.</li>
-                        <li>feels hatred for Robbie.</li>
-                        <li>aggressive and demanding.</li>
-                    </ol>
-                </li>
-                <li>
-                    His entire ‘mentality’ __________for the purpose. (1 Point)
-                    <ol type='A'>
-                        <li>has been created</li>
-                        <li>has created</li>
-                        <li>is been created</li>
-                    </ol>
-                </li>
-                <li>
-                    What were Gloria and Robbie doing as the chapter starts? (1 Point)
-                    <ol type='A'>
-                        <li>They were playing hide-and-seek.</li>
-                        <li>Robbie was running to the welcome bark of home-tree.</li>
-                        <li>Gloria was going to spank Robbie.</li>
-                    </ol>
-                </li>
-                <li>
-                    Let’s not go off the deep end. This expression means… (1 Point)
-                    <ol type='A'>
-                        <li>discuss generally not in detail</li>
-                        <li>discuss every detail</li>
-                        <li>get very angry about something</li>
-                    </ol>
-                </li>
-                <li>
-                    She protected herself _________ a world. (1 Point)
-                    <ol type='A'>
-                        <li>against</li>
-                        <li>upon</li>
-                        <li>on</li>
-                    </ol>
-                </li>
-            </ol>
+            <TestList options={[
+                {
+                    question: "What is the opinion of Susan about robots? (1 Point)",
+                    answers: [
+                        { text: "Robots are creatures devoted to humanity." },
+                        { text: "Robots are blasphemers." },
+                        { text: "Robots are main competitors for human jobs." },
+                        { text: "Robots must be created as non-vocal robots." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "Why does George give in to the idea to take away Robbie? (1 Point)",
+                    answers: [
+                        { text: "Grace badgers George to get rid of Robbie." },
+                        { text: "Robbie has broken the First Law of Robotics." },
+                        { text: "Robbie has hurt Gloria." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "There was always the impulse to ____________ from her sight. (1 Point)",
+                    answers: [
+                        { text: "sneak away" },
+                        { text: "sneak on" },
+                        { text: "sneak up" }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "It was the high-pitched sound of a woman who had the nervous tone of one ________ anxiety was beginning to overcome impatience. (1 Point)",
+                    answers: [
+                        { text: "by whom" },
+                        { text: "with whom" },
+                        { text: "in whom" }
+                    ],
+                    correctAnswer: "C"
+                },
+                {
+                    question: "Who worked as a robopsychologist? (1 Point)",
+                    answers: [
+                        { text: "Susan" },
+                        { text: "Alfred Lanning" },
+                        { text: "Lawrence Robertson" }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "If you _______ me the bare bones, Dr. Calvin, I can have Mr. Powell fill it in afterward. (1 Point)",
+                    answers: [
+                        { text: "would give" },
+                        { text: "give" },
+                        { text: "had given" }
+                    ],
+                    correctAnswer: "B"
+                },
+                {
+                    question: "Robbie always wins Gloria because Gloria is too little to overcome Robbie. (1 Point)",
+                    answers: [
+                        { text: "Robbie lets Gloria win." },
+                        { text: "Robbie always wins Gloria because it has an installed program." },
+                        { text: "Robbie and Gloria win each other in turn." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "What calculation parameters did Susan learn? (1 Point)",
+                    answers: [
+                        { text: "For fixing the possible variables within the 'positronic brain'" },
+                        { text: "For neurological systems" },
+                        { text: "For identifying a brain hypertrophy" }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "When did Alfred Lanning become director of research? (1 Point)",
+                    answers: [
+                        { text: "Before Susan joined U.S. Robot and Mechanical Men, Inc." },
+                        { text: "After Susan joined U.S. Robot and Mechanical Men, Inc." },
+                        { text: "They joined U.S. Robot and Mechanical Men, Inc. on the same day." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "What did the U.S. Robots do to ensure the company’s survival? (1 Point)",
+                    answers: [
+                        { text: "New robot models were created." },
+                        { text: "Robbie was taken back to the family." },
+                        { text: "Mike Donovan worked on experimental designs." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "Some little jigger will come loose and the awful thing will __________. (1 Point)",
+                    answers: [
+                        { text: "go berserk" },
+                        { text: "berserk" },
+                        { text: "completely berserk" }
+                    ],
+                    correctAnswer: "C"
+                },
+                {
+                    question: "Susan observed ___________ (1 Point)",
+                    answers: [
+                        { text: "direction of human progress change and leap ahead." },
+                        { text: "calculation parameters." },
+                        { text: "positronic brain development." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "Calculating machines in the mid-twentieth century were upset by… (1 Point)",
+                    answers: [
+                        { text: "Robertson and his positronic brain-paths" },
+                        { text: "Robertson and his photocells" },
+                        { text: "Robertson and his ideas on a size of human brain" }
+                    ],
+                    correctAnswer: "B"
+                },
+                {
+                    question: "They said we do not show respect for God or religion. (1 Point)",
+                    answers: [
+                        { text: "faithful" },
+                        { text: "pious" },
+                        { text: "blasphemers" }
+                    ],
+                    correctAnswer: "C"
+                },
+                {
+                    question: "You _________ me back to the house, Robbie. (1 Point)",
+                    answers: [
+                        { text: "could have better carry" },
+                        { text: "would better carry" },
+                        { text: "had better carry" }
+                    ],
+                    correctAnswer: "C"
+                },
+                {
+                    question: "Gloria’s attitude to Robbie is… (1 Point)",
+                    answers: [
+                        { text: "demanding but she loves Robbie." },
+                        { text: "feels hatred for Robbie." },
+                        { text: "aggressive and demanding." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "His entire ‘mentality’ __________for the purpose. (1 Point)",
+                    answers: [
+                        { text: "has been created" },
+                        { text: "has created" },
+                        { text: "is been created" }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "What were Gloria and Robbie doing as the chapter starts? (1 Point)",
+                    answers: [
+                        { text: "They were playing hide-and-seek." },
+                        { text: "Robbie was running to the welcome bark of home-tree." },
+                        { text: "Gloria was going to spank Robbie." }
+                    ],
+                    correctAnswer: "A"
+                },
+                {
+                    question: "Let’s not go off the deep end. This expression means… (1 Point)",
+                    answers: [
+                        { text: "discuss generally not in detail" },
+                        { text: "discuss every detail" },
+                        { text: "get very angry about something" }
+                    ],
+                    correctAnswer: "C"
+                },
+                {
+                    question: "She protected herself _________ a world. (1 Point)",
+                    answers: [
+                        { text: "against" },
+                        { text: "upon" },
+                        { text: "on" }
+                    ],
+                    correctAnswer: "A"
+                }
+            ]} />
+
             <Typography.Title id='unit-2' className={styles.anchor} margin={true}>Unit 2. Chapter: "Runaround"</Typography.Title>
             <Typography.Text>
                 <Typography.Span>Objective:</Typography.Span> To engage students in critical thinking and collaborative discussion while exploring the themes and implications of Chapter "Runaround" in "I, Robot."

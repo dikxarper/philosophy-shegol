@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { MenuProps } from 'antd';
-import { Menu as AntdMenu } from 'antd';
-import styles from './Menu.module.scss';
+import { MenuProps, Menu as AntdMenu } from 'antd';
 import { useDispatch } from 'react-redux';
 import { addContentHeight, reduceContentHeight } from '@/app/store/menuSlice';
+
+import styles from './Menu.module.scss';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
