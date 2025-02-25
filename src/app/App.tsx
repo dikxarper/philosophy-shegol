@@ -4,10 +4,7 @@ import { ConfigProvider, Layout } from 'antd';
 
 import Home from '../modules/Home/Home';
 import Header from '../shared/components/Layout/Header/Header';
-import About from '@/modules/About/About';
-
-// temp
-import Test from '@/modules/Home/Test';
+// import About from '@/modules/About/About';
 
 import './App.css';
 
@@ -37,11 +34,8 @@ const App: React.FC = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />}>
-                    <Route path="/e-book-academy" element={<Home />} />
-                    <Route path="/e-book-academy/about" element={<About />} />
-                    <Route path="/e-book-academy/test" element={<Test />} />
-                    <Route path="/" element={<Navigate to="/e-book-academy" />} />
-                    <Route path="*" element={<Navigate to="/e-book-academy" />} />
+                    <Route path="/phillo-hoot" element={<Home />} />
+                    <Route path="/" element={<Navigate to="/phillo-hoot" />} />
                 </Route>
             </Routes>
         </BrowserRouter>

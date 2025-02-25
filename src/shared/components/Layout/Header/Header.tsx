@@ -7,8 +7,8 @@ const Header: React.FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.header_inner}>
-                <Link className={styles.header_link} to={'/'}>Professional English Course: Enhancing Reading competencies</Link>
-                <Link className={styles.header_link} to={'/e-book-academy/about'}>About</Link>
+                <Link className={styles.header_link} to={'/'}>Проект по Философии</Link>
+                {/* <Link className={styles.header_link} to={'/e-book-academy/about'}>About</Link> */}
             </div>
         </header>
     );
