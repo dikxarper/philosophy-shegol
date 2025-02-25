@@ -34,9 +34,9 @@ const App: React.FC = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />}>
-                    <Route path="/phillo-hoot" element={<Home />} />
-                    <Route path="/" element={<Navigate to="/phillo-hoot" />} />
-                    <Route path="/phillo-hoot/:name" element={<PhillPage />} />
+                    <Route path="/philosophy-shegol" element={<Home />} />
+                    <Route path="/" element={<Navigate to="/philosophy-shegol" />} />
+                    <Route path="/philosophy-shegol/:name" element={<PhillPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
