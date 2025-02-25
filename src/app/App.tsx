@@ -4,7 +4,7 @@ import { ConfigProvider, Layout } from 'antd';
 
 import Home from '../modules/Home/Home';
 import Header from '../shared/components/Layout/Header/Header';
-// import About from '@/modules/About/About';
+import PhillPage from '@/modules/Home/components/PhillPage/PhillPage';
 
 import './App.css';
 
@@ -15,7 +15,7 @@ const MainLayout: React.FC = () => {
         <ConfigProvider
             theme={{
                 token: {
-                    fontFamily: 'Montserrat'
+                    fontFamily: 'Roboto'
                 }
             }}
         >
@@ -36,6 +36,7 @@ const App: React.FC = () => {
                 <Route element={<MainLayout />}>
                     <Route path="/phillo-hoot" element={<Home />} />
                     <Route path="/" element={<Navigate to="/phillo-hoot" />} />
+                    <Route path="/phillo-hoot/:name" element={<PhillPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>

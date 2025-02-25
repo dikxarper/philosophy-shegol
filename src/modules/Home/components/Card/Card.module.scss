@@ -1,0 +1,32 @@
+$card-p: 20px 48px;
+
+$img-container-w: 320px;
+$img-container-h: 472px;
+$img-container-overflow: hidden;
+$img-object-fit: contain;
+$img-w: 100%;
+$img-h: 100%;
+$img-b-radius: 256px;
+$img-meta-t-align: center;
+
+.card {
+    :global(.ant-card) {
+        padding: $card-p;
+    }
+
+    .img_container {
+        width: $img-container-w;
+        height: $img-container-h;
+        overflow: $img-container-overflow;
+        img {
+            width: $img-w;
+            height: $img-h;
+            object-fit: $img-object-fit;
+            border-radius: $img-b-radius;
+        }
+    }
+
+    .img_meta {
+        text-align: $img-meta-t-align;
+    }
+}
