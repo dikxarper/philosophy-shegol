@@ -16,7 +16,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ img_url, name, url_name }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/phillo-hoot/${url_name}`);
+        navigate(`/philosophy-shegol/${url_name}`);
     };
     return (
         <div className={styles.card} onClick={handleClick}>
