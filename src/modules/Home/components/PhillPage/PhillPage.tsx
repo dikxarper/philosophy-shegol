@@ -40,14 +40,14 @@ const PhillPage: React.FC = () => {
             />
             <div className={styles.info}>
                 <h1>{philosopher.name}</h1>
-                <p><strong>Рождение:</strong> {philosopher.born}</p>
-                <p><strong>Смерть:</strong> {philosopher.died}</p>
-                <p><strong>Философия:</strong> {philosopher.philosophy}</p>
-                <p><strong>Определение философии:</strong> {philosopher.philosophy_definition}</p>
-                <p><strong>Знаковые труды:</strong> {philosopher.notable_works.join(", ")}</p>
-                <p><strong>Влияния:</strong> {philosopher.influences.join(", ")}</p>
-                <p><strong>Повлиял на:</strong> {philosopher.influenced.join(", ")}</p>
-                <h2>Ключевые идеи</h2>
+                <p><strong>Туылды:</strong> {philosopher.born}</p>
+                <p><strong>Қайтыс болды:</strong> {philosopher.died}</p>
+                <p><strong>Философиясы:</strong> {philosopher.philosophy}</p>
+                <p><strong>Философиясының анықтамасы:</strong> {philosopher.philosophy_definition}</p>
+                <p><strong>Көрнекті еңбектері:</strong> {philosopher.notable_works.join(", ")}</p>
+                <p><strong>Оған әсер еткен тұлғалар:</strong> {philosopher.influences.join(", ")}</p>
+                <p><strong>Одан әсер алған тұрғалар:</strong> {philosopher.influenced.join(", ")}</p>
+                <h2>Негізгі идеялар</h2>
                 <ul>    
                     {Object.entries(philosopher.key_ideas).map(([idea, explanation]) => (
                         <li style={{marginBottom: 12}} key={idea}><strong>{idea}:</strong> {explanation}</li>
