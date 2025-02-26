@@ -1,0 +1,27 @@
+$form-mb: 48px;
+$radio-group-scroll-mt: 48px;
+
+$radio-w-h: 16px;
+$radio-m: -8px;
+
+.custom-form {
+    :global(.ant-form-item) {
+        margin-bottom: $form-mb;
+    }
+
+    :global(.ant-radio-group) {
+        scroll-margin-top: $radio-group-scroll-mt;
+    }
+
+    :global(.ant-radio-inner) {
+        width: $radio-w-h;
+        height: $radio-w-h;
+    }
+
+    :global(.ant-radio-inner::after) {
+        width: $radio-w-h;
+        height: $radio-w-h;
+        margin-block-start: $radio-m;
+        margin-inline-start: $radio-m;
+    }
+}

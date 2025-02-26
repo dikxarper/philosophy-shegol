@@ -35,8 +35,8 @@ const App: React.FC = () => {
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path="/philosophy-shegol" element={<Home />} />
-                    <Route path="/" element={<Navigate to="/philosophy-shegol" />} />
                     <Route path="/philosophy-shegol/:name" element={<PhillPage />} />
+                    <Route path="/" element={<Navigate to="/philosophy-shegol" />} />
                 </Route>
             </Routes>
         </BrowserRouter>
